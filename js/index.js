@@ -1,26 +1,19 @@
-let first = [];
-let email = [];
-let subject = [];
-let password = [];
+// let first = [];
+// let email = [];
+// let subject = [];
+// let password = [];
 
-let allStudents = [first, email, subject, password];
+// let allStudents = [first, email, subject, password];
 
 addStudent = () => {
     let first = document.getElementById("first").value
     let email = document.getElementById("email").value
     let subject = document.getElementById("subject").value
-    let password = document.getElementById("password").value
+    let number = document.getElementById("number").value
+    // let password = document.getElementById("password").value
 
 
     if(newsletter.checked){
-
-        allStudents.push({
-            studentFirst: first,
-            studentLast: last,
-            studentAge: age,
-            studentSubject: subject
-        });
-
 
 
         alert("Welcome " + first + "! Thank you for your ,interest in " + subject + "! We will contact you via the email provided: " + email  + ",or alternatively on the phone number: " + number);
@@ -31,7 +24,8 @@ addStudent = () => {
     // console.log(email)
     // console.log(subject)
     // console.log(password)
-        console.log(allStudents)
+    
+    console.log(allStudents)
 
 
     document.getElementById("studentForm").reset();
